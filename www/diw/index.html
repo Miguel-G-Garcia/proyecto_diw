@@ -496,12 +496,27 @@
 		</fieldset>
 	</form>
 
+	<!-- FORMULARIO BUSCAR CLIENTE POR ID -->
+	<form class="form-horizontal  mx-5 mt-5 p-2" name="frmFindClient" id="frmFindClient"
+		style="display: none;">
+		<fieldset>
+			<legend>Buscar Cliente por ID</legend>
+			<div class="form-group">
+				<label for="txtClientId">Id Client</label>
+				<input id="txtClientId" name="txtClientId" type="text" class="form-control">
+			</div>
+			<div class="form-group">
+				<input name="btnFindClient" id="btnFindClient" type="button" class="btn btn-success"
+					value="Aceptar" />
+			</div>
+		</fieldset>
+	</form>
 	
 	<!-- FORMULARIO BUSCAR RESERVA POR ID -->
 	<form class="form-horizontal  mx-5 mt-5 p-2" name="frmFindReservation" id="frmFindReservation"
 		style="display: none;">
 		<fieldset>
-			<legend>Modificar Reseva</legend>
+			<legend>Buscar Reserva por Id</legend>
 			<div class="form-group">
 				<label for="txtReservationId">Id Reserva</label>
 				<input id="txtReservationId" name="txtReservationId" type="text" class="form-control">

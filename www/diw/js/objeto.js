@@ -88,6 +88,15 @@ class Estancias {
 		return response;
 	}
 
+	async findClient(client_id){
+		let data = new FormData();
+		data.append("client_id", client_id);
+
+		let response = await peticionGET("find_client_id.php", data);
+
+		return response;
+	}
+
 	async makeReservation(oReservation) {
 		let datos = new FormData();
 		datos.append("client_id", oReservation.client_id);
@@ -146,6 +155,15 @@ class Estancias {
 		data.append("reservation",JSON.stringify(oReservation));
 
 		let response = await peticionPOST("edit_reservation.php", data);
+
+		return response;
+	}
+
+	async findReservation(reservation_id){
+		let data = new FormData();
+		data.append("reservation_id", reservation_id);
+
+		let response = await peticionGET("find_reservation_id.php", data);
 
 		return response;
 	}
