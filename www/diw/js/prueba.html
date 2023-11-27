@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fecha desde Input Date</title>
+</head>
+<body>
+
+<!-- Un input de tipo date con restricción de formato -->
+<input type="date" id="inputFecha" title="Ingrese una fecha en formato DD-MM-YYYY">
+
+<button onclick="obtenerFecha()">Obtener Fecha</button>
+
+<script>
+    function obtenerFecha() {
+        // Obtener el valor del input
+        let valorInput = document.getElementById('inputFecha').value;
+        console.log(valorInput);
+        // Validar el formato utilizando una expresión regular
+        
+            // Extraer día, mes y año del valor del input
+           // let [dia, mes, anio] = valorInput.split('-');
+
+            // Crear un objeto Date con el formato correcto
+            let fecha = new Date(valorInput);
+            console.log(fecha);
+        
+    }
+</script>
+
+</body>
+</html>

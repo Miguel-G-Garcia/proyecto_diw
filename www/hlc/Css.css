@@ -1,0 +1,54 @@
+#myCarousel {
+    width: 75%;
+  }
+
+  #contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Ajusta la altura según tus necesidades */
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  
+  #mapa {
+    padding-top: 10%;
+    z-index: 0;
+    height: 20%;
+  }
+
+  #opiniones {
+    margin-top: 5%;
+  }
+
+  :root {
+    --bs-primary: #ff5600;
+    --bs-secondary: #ff7a37;
+    --bs-navbar-bg: #1A1410;
+    --bs-light:#f1ab87;
+    --bs-dark:#28170f;
+  }
+  
+
+  .navbar-dark {
+    background-color: var(--bs-dark) !important;
+  }
+  
+  body{
+    background-color: var(--bs-light);
+  }
+
+  .card{
+    background-color: var(--bs-secondary);
+  }
+
+  h3{
+    -webkit-text-fill-color: var(--bs-primary);
+    -webkit-text-stroke: 1px var(--bs-dark);
+  }
+
+  

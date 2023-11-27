@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "../../../1º dam/coding"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../hlc/PHP/docker-lamp/www/8_Bases_de_datos"
+		},
+		{
+			"path": "../../hlc/PHP/docker-lamp/www/Javascript"
+		},
+		{
+			"path": "../../hlc/PHP/docker-lamp/www/Javascript/ajax/app_bd"
+		},
+		{
+			"path": "../../hlc/PHP/docker-lamp"
+		},
+		{
+			"path": "../../hlc/PHP/docker-lamp/www/app_bd_hlc"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "2º dam"
+	}
+}
