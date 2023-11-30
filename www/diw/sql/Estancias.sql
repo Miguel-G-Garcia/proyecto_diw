@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: db
--- Tiempo de generación: 19-11-2023 a las 17:28:56
+-- Tiempo de generación: 30-11-2023 a las 11:49:46
 -- Versión del servidor: 8.1.0
 -- Versión de PHP: 8.2.8
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `Estancias`
 --
+CREATE DATABASE IF NOT EXISTS `Estancias` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE `Estancias`;
 
 -- --------------------------------------------------------
 
@@ -29,11 +31,20 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `clients` (
   `client_id` int NOT NULL,
-  `client_name` varchar(50) COLLATE utf8mb4_spanish_ci NOT NULL,
-  `address` varchar(80) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `client_name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci NOT NULL,
+  `address` varchar(80) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci NOT NULL,
   `phone_number` int NOT NULL,
-  `gmail` varchar(50) COLLATE utf8mb4_spanish_ci NOT NULL
+  `gmail` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `clients`
+--
+
+INSERT INTO `clients` VALUES(1, 'Manuel', 'calle villa verde 12', 123456789, 'correodeManuel@gmail.com');
+INSERT INTO `clients` VALUES(2, 'Carlos', 'calle Montequinto 142', 987654321, 'correodeCarlos@gmail.com');
+INSERT INTO `clients` VALUES(3, 'Pepe', 'calle Botijo 1', 879453162, 'ElBotijo@gmail.com');
+INSERT INTO `clients` VALUES(4, 'Jose', 'calle Malas pinta 23', 134625978, 'JoseElHijo@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -48,6 +59,15 @@ CREATE TABLE `reservations` (
   `check_out_date` date NOT NULL,
   `room_number` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `reservations`
+--
+
+INSERT INTO `reservations` VALUES(1, 1, '2023-10-05', '2023-10-20', 12);
+INSERT INTO `reservations` VALUES(2, 3, '2023-10-10', '2023-10-17', 9);
+INSERT INTO `reservations` VALUES(3, 3, '2023-11-10', '2023-12-10', 9);
+INSERT INTO `reservations` VALUES(4, 2, '2023-09-10', '2023-09-15', 9);
 
 --
 -- Índices para tablas volcadas
@@ -74,13 +94,13 @@ ALTER TABLE `reservations`
 -- AUTO_INCREMENT de la tabla `clients`
 --
 ALTER TABLE `clients`
-  MODIFY `client_id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `client_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `reservations`
 --
 ALTER TABLE `reservations`
-  MODIFY `reservation_id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `reservation_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Restricciones para tablas volcadas
