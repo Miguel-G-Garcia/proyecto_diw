@@ -1,13 +1,1 @@
-{
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "../../../hlc/PHP/docker-lamp/www/app_bd_hlc"
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "proyecto_diw"
-	}
-}
+
