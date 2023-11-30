@@ -1,6 +1,6 @@
 "use strict";
 
-const rutaBackend = "http://dominiogg.great-site.net/backend/";
+const rutaBackend = "localhost/diw/backend/";
 
 /**
  * Realiza peticiones AJAX de tipo GET
