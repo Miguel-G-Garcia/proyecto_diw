@@ -100,7 +100,7 @@ async function addClient() {
 	let client_name = frmNewClient.txtClientName.value.trim();
 	let address = frmNewClient.txtAddress.value.trim();
 	let phone_number = frmNewClient.txtPhone.value.trim();
-	let gmail = frmNewClient.txtGmail.value.trim() + "@gmail.com";
+	let gmail = frmNewClient.txtGmail.value.trim();
 
 	let valid = validateClient(frmNewClient);
 	if (valid !== "client_ok") {
@@ -139,13 +139,13 @@ async function MakeReservation() {
 
 function validateClient(formClient) {
 	let message = "client_ok";
-	if (formClient.txtClientName.length > 50) {
+	if (formClient.txtClientName.value.length > 50) {
 		message = "El nombre no puede ser mayo de 50 caracteres"
-	} else if (formClient.txtAddress.trim().length === 0) {
+	} else if (formClient.txtAddress.value.trim().length === 0) {
 		message = "Tiene que tener una dirección"
-	} else if (formClient.txtPhone.trim().length < 9 || formClient.txtPhone.trim().length > 9) {
+	} else if (formClient.txtPhone.value.trim().length < 9 || formClient.txtPhone.value.trim().length > 9) {
 		message = "El nuemero de telefono tiene que res de 9 digitos"
-	} else if (formClient.txtGmail.trim().length === 0) {
+	} else if (formClient.txtGmail.value.trim().length === 0) {
 		message = "Tiene que tener un correo electronico"
 	}
 

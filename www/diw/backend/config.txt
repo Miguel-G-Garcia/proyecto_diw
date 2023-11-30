@@ -9,11 +9,11 @@ De esta manera:
 
 /* Array asociativo con la configuración de conexión a la base de datos */
 $basedatos = array(
-    "basedatos" => "if0_35529759_Estancias",
-    "usuario" => "if0_35529759",
-    "password" => "kl0MmYVtDF32H ",
-    "servidor" => "sql301.infinityfree.com",
-    "puerto" => 3306
+    "basedatos" => "Estancias",
+    "usuario" => "root",
+    "password" => "test",
+    "servidor" => "db",
+    "puerto" => 3307
 );
 
 
