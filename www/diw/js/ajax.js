@@ -1,6 +1,6 @@
 "use strict";
 
-const rutaBackend = "localhost/diw/backend/";
+const rutaBackend = "http://localhost/diw/backend/";
 
 /**
  * Realiza peticiones AJAX de tipo GET
