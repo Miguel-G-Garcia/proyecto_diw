@@ -20,8 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `Estancias`
 --
-CREATE DATABASE IF NOT EXISTS `Estancias` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
-USE `Estancias`;
+/*CREATE DATABASE IF NOT EXISTS `Estancias` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE `Estancias`;*/
 
 -- --------------------------------------------------------
 
